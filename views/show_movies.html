@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Movies I Really Like</title>
+
+<style>
+    .ifilm{
+        text-align: center;
+        color: green;
+        font-family: 'Helvetica', 'Arial', sans-serf;
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+    
+{% for movie in movies %}
+
+<p class="ifilm"> {{movie.name}} - {{movie.year}} - <a href="{{movie.url}}">{{movie.url}}</a></p>
+<hr>
+{% endfor %}
+
+</body>
+</html>
